@@ -32,7 +32,12 @@ module.exports = {
         name: 'images',
         path: 'images',
       },
-      // gatsby-background-image
+    },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: '1058164720',
+      },
     },
   ],
 }
