@@ -1,0 +1,27 @@
+type Query {
+    allMdx:[allMdx]
+    site:[site],
+}
+
+type allMdx {
+    nodes: nodes,
+}
+
+type nodes {
+    frontmatter: frontmatter,
+    excerpt: String!
+}
+
+type frontmatter {
+    title: String,
+    slug: String,
+    author: String
+}
+
+type site {
+    siteMetadata: siteMetadata
+}
+type siteMetadata {
+    title: String
+    description: String
+}
