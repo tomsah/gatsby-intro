@@ -39,5 +39,14 @@ module.exports = {
         username: '1058164720',
       },
     },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {
+        production: true,
+        disable: !process.env.ANALYZE_BUNDLE_SIZE,
+        generateStateFile: true,
+        analyzerMode: 'static',
+      },
+    },
   ],
 }
